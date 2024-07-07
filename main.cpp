@@ -11,6 +11,7 @@ int main(int argc, char *argv[]) {
     constructorAssignment.testQModbusReply();
     constructorAssignment.testQModbusDataUnit();
     constructorAssignment.testQVector();
+    constructorAssignment.testQQueue();
 
     MainWindow w;
     w.show();

@@ -5,6 +5,7 @@
 #include <QDebug>
 #include <QModbusDataUnit>
 #include <QModbusReply>
+#include <QQueue>
 #include <QVector>
 
 class ConstructorAssignment : public QObject {
@@ -15,6 +16,7 @@ public:
     void testQModbusReply();
     void testQModbusDataUnit();
     void testQVector();
+    void testQQueue();
 
 signals:
 };

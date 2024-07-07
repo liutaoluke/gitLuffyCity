@@ -46,3 +46,17 @@ void ConstructorAssignment::testQVector() {
     qDebug() << "QVector<quint16> move constructible: " << isMoveConstructible;
     qDebug() << "QVector<quint16> move assignable: " << isMoveAssignable;
 }
+
+void ConstructorAssignment::testQQueue() {
+    bool isCopyConstructible = std::is_copy_constructible<QQueue<QModbusReply>>::value;
+    bool isCopyAssignable = std::is_copy_assignable<QQueue<QModbusReply>>::value;
+
+    bool isMoveConstructible = std::is_move_constructible<QQueue<QModbusReply>>::value;
+    bool isMoveAssignable = std::is_move_assignable<QQueue<QModbusReply>>::value;
+
+    qDebug() << "QQueue<QModbusReply> copy constructible: " << isCopyConstructible;
+    qDebug() << "QQueue<QModbusReply> copy assignable: " << isCopyAssignable;
+
+    qDebug() << "QQueue<QModbusReply> move constructible: " << isMoveConstructible;
+    qDebug() << "QQueue<QModbusReply> move assignable: " << isMoveAssignable;
+}
