@@ -10,6 +10,7 @@ int main(int argc, char *argv[]) {
     ConstructorAssignment constructorAssignment;
     constructorAssignment.testQModbusReply();
     constructorAssignment.testQModbusDataUnit();
+    constructorAssignment.testQVector();
 
     MainWindow w;
     w.show();
