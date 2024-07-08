@@ -11,11 +11,13 @@ CONFIG += c++17
 
 SOURCES += \
     constructorassignment.cpp \
+    destructor.cpp \
     main.cpp \
     mainwindow.cpp
 
 HEADERS += \
     constructorassignment.h \
+    destructor.h \
     mainwindow.h
 
 FORMS += \
