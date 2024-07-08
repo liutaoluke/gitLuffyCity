@@ -33,8 +33,8 @@ void ConstructorAssignment::testQModbusDataUnit() {
     qDebug() << "QModbusDataUnit copy constructible: " << isCopyConstructible;
     qDebug() << "QModbusDataUnit copy assignable: " << isCopyAssignable;
 
-    qDebug() << "QModbusReply move constructible: " << isMoveConstructible;
-    qDebug() << "QModbusReply move assignable: " << isMoveAssignable;
+    qDebug() << "QModbusDataUnit move constructible: " << isMoveConstructible;
+    qDebug() << "QModbusDataUnit move assignable: " << isMoveAssignable;
 }
 
 void ConstructorAssignment::testQVector() {
