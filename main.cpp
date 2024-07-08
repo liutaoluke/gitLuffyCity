@@ -9,14 +9,16 @@ int main(int argc, char *argv[]) {
     QApplication a(argc, argv);
 
     ConstructorAssignment constructorAssignment;
+    Destructor destructor;
+
     constructorAssignment.testQModbusReply();
+    destructor.testQModbusReply();
+
     constructorAssignment.testQModbusDataUnit();
+    destructor.testQModbusDataUnit();
+
     constructorAssignment.testQVector();
     constructorAssignment.testQQueue();
-
-    Destructor destructor;
-    destructor.testQModbusReply();
-    destructor.testQModbusDataUnit();
 
     MainWindow w;
     w.show();
